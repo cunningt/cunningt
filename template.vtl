@@ -1,13 +1,15 @@
 <img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
 
-{bio}
+$bio
 
 ## Most recent 🦣 Mastodon posts:
 
-{#for toot in toots}
-🦣 [{toot.pubDateZonedDateTime.get().format('YYYY-MM-dd')}]({toot.link.get()})
+#foreach($toot in $toots)
 
-{toot.description.get()}
+🦣  [$toot.pubDateZonedDateTime.get()]($toot.link.get())
 
+$toot.description.get()
+
+#end
 {/for}
 

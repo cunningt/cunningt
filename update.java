@@ -1,23 +1,19 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS io.quarkus:quarkus-bom:2.0.0.Final@pom
-//DEPS io.quarkus:quarkus-qute
+//DEPS org.apache.velocity:velocity-engine-core:2.3
 //DEPS https://github.com/w3stling/rssreader/tree/v2.5.0
 
 //JAVA 11+
 
 import com.apptastic.rssreader.Item;
 import com.apptastic.rssreader.RssReader;
-import io.quarkus.qute.Engine;
-
-import io.quarkus.runtime.QuarkusApplication;
-import io.quarkus.runtime.annotations.QuarkusMain;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -27,15 +23,13 @@ import java.util.PriorityQueue;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
+import org.apache.velocity.Template;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.VelocityEngine;
 
-@QuarkusMain
-public class update implements QuarkusApplication {
+public class update {
 
-    @Inject
-    Engine qute;
-
-    public Collection<Item> getPosts(String feedUrl, int limit) {
+    public static Collection<Item> getPosts(String feedUrl, int limit) {
         Collection<Item> sorted = new PriorityQueue<>(Collections.reverseOrder());
         RssReader reader = new RssReader();
         try {
@@ -47,7 +41,7 @@ public class update implements QuarkusApplication {
         return sorted;
     }
 
-    public String readStaticReadme(String filename) {
+    public static String readStaticReadme(String filename) {
         File file = new File(filename);
         StringBuilder sb = new StringBuilder(1000);
         String line = null;
@@ -65,16 +59,23 @@ public class update implements QuarkusApplication {
         return sb.toString();
     }
 
-    public int run(String... args) throws Exception {
+    public static void main (String args[]) throws Exception {
         String staticReadme = readStaticReadme("readme-static.txt");
 
         Collection<Item> mastodonPosts = getPosts("https://mastodon.social/users/tcunning.rss", 5);
 
-        Files.writeString(Path.of("readme.md"), 
-            qute.parse(Files.readString(Path.of("template.md.qute")))
-                .data("bio", staticReadme)
-                .data("toots", mastodonPosts)
-                .render());
-        return 0;
+        VelocityEngine ve = new VelocityEngine();
+        ve.init();
+            
+        Template t = ve.getTemplate("template.vtl");
+        VelocityContext vc = new VelocityContext();
+        vc.put("bio", staticReadme);
+        vc.put("toots", mastodonPosts);
+            
+	StringWriter sw = new StringWriter(); 
+	PrintWriter pw = new PrintWriter("readme.md");
+        t.merge(vc, sw);
+	pw.write(sw.toString());
+	pw.close();
     }
 }
