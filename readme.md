@@ -1,4 +1,6 @@
 <img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
+---------------
+
 
 👔 I work at Red Hat in Integration.
 
@@ -9,6 +11,9 @@
 🤷 Learning more about Quarkus.
 
 
+
+Most recent 🦣 Mastodon posts:
+---------------
 
 
 🦣  [2022-11-20T22:19:09Z](https://mastodon.social/@tcunning/109378453470068085)
@@ -30,5 +35,4 @@
 
 <p>Fantasy baseball comps based on 2022 MLB results only : <a href="https://scoutingthestatline.com/2022mlb/index.html" target="_blank" rel="nofollow noopener noreferrer"><span class="invisible">https://</span><span class="ellipsis">scoutingthestatline.com/2022ml</span><span class="invisible">b/index.html</span></a></p>
 
-{/for}
 
