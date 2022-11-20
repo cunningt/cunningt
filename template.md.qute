@@ -1,0 +1,17 @@
+[NOTE]
+====
+<img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
+
+====
+
+{bio}
+
+## Most recent 🦣 Mastodon posts:
+
+{#for toot in toots}
+🦣 [{toot.pubDateZonedDateTime.get().format('YYYY-MM-dd')}]({toot.link.get()})
+
+{toot.description.get()}
+
+{/for}
+

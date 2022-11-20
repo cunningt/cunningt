@@ -53,10 +53,12 @@ public class update implements QuarkusApplication {
         File file = new File(filename);
         StringBuilder sb = new StringBuilder(1000);
         String line = null;
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             while ((line = br.readLine()) != null) {
                 sb.append(line);
+		sb.append(System.getProperty("line.separator"));
             }
             br.close();
         } catch (java.io.IOException ioe) {
@@ -70,8 +72,8 @@ public class update implements QuarkusApplication {
 
         Collection<Item> mastodonPosts = getPosts("https://mastodon.social/users/tcunning.rss", 5);
 
-        Files.writeString(Path.of("readme.adoc"), 
-            qute.parse(Files.readString(Path.of("template.adoc.qute")))
+        Files.writeString(Path.of("readme.md"), 
+            qute.parse(Files.readString(Path.of("template.md.qute")))
                 .data("bio", staticReadme)
                 .data("toots", mastodonPosts)
                 .render());

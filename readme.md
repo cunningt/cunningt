@@ -1,30 +1,25 @@
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-:hide-uri-scheme:
-:figure-caption!:
-
 [NOTE]
 ====
-image:https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg[Build README,link="https://github.com/cunningt/cunningt/actions?query=workflow%3A%22Update+README%22"]
+<img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
+
 ====
 
-I work at Red Hat in Integration.I spend some free time forecasting minor league baseball performance.    
+👔 I work at Red Hat in Integration.
+
+⚾️ I spend some free time forecasting minor league baseball performance.
+
+🐫 I contribute to the Camel project.
+
+🤷 Learning more about Quarkus.
+
 
 ## Most recent 🦣 Mastodon posts:
-:hide-uri-scheme
 
-🦣 2022-11-04
-https://mastodon.social/@tcunning/109286090283001920
+🦣 [2022-11-04](https://mastodon.social/@tcunning/109286090283001920)
 
 <p>Minor league season ended on the 28th, my final minor league prospect comps here : <a href="https://scoutingthestatline.com/2022/rankings.html" target="_blank" rel="nofollow noopener noreferrer"><span class="invisible">https://</span><span class="ellipsis">scoutingthestatline.com/2022/r</span><span class="invisible">ankings.html</span></a></p>
 
-🦣 2022-11-04
-https://mastodon.social/@tcunning/109286088250456009
+🦣 [2022-11-04](https://mastodon.social/@tcunning/109286088250456009)
 
 <p>Fantasy baseball comps based on 2022 MLB results only : <a href="https://scoutingthestatline.com/2022mlb/index.html" target="_blank" rel="nofollow noopener noreferrer"><span class="invisible">https://</span><span class="ellipsis">scoutingthestatline.com/2022ml</span><span class="invisible">b/index.html</span></a></p>
 
