@@ -17,8 +17,8 @@ jobs:
       - name: jbang
         uses: jbangdev/jbang-action@v0.100.1
         with:
+          jbangargs: --verbose
           script: update.java
-          scriptargs: --verbose
         env:
           JBANG_REPO: /root/.jbang/repository
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
