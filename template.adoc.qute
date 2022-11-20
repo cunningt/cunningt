@@ -10,8 +10,7 @@ endif::[]
 
 [NOTE]
 ====
-image:https://github.com/maxandersen/maxandersen/workflows/Update%20README/badge.svg[Build README,link="https://github.com/maxandersen/maxandersen/actions?query=workflow%3A%22Update+README%22"]
- This profile is automatically generated each day using https://quarkus.io with https://jbang.dev - see https://github.com/cunningt/cunningt/blob/master/update.java[update.java].
+image:https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg[Build README,link="https://github.com/cunningt/cunningt/actions?query=workflow%3A%22Update+README%22"]
 ====
 
 {bio}
