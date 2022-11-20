@@ -15,12 +15,14 @@ image:https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg[B
 
 {bio}
 
-## 🦣 Most recent 🦣 Mastodon posts:
+## Most recent 🦣 Mastodon posts:
 :hide-uri-scheme
 
 {#for toot in toots}
 🦣 {toot.pubDateZonedDateTime.get().format('YYYY-MM-dd')}
 {toot.link.get()}
+
 {toot.description.get()}
+
 {/for}
 
