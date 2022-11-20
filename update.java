@@ -5,7 +5,7 @@
 //DEPS io.quarkus:quarkus-qute
 //DEPS https://github.com/w3stling/rssreader/tree/v2.5.0
 
-//JAVA 17+
+//JAVA 16+
 
 import com.apptastic.rssreader.Item;
 import com.apptastic.rssreader.RssReader;

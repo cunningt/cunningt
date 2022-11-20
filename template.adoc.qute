@@ -17,10 +17,11 @@ image:https://github.com/maxandersen/maxandersen/workflows/Update%20README/badge
 {bio}
 
 ## 🦣 Most recent 🦣 Mastodon posts:
+:hide-uri-scheme
 
 {#for toot in toots}
 🦣 {toot.pubDateZonedDateTime.get().format('YYYY-MM-dd')}
-<a href="{toot.link.get()}">{toot.link.get()}</a>
+{toot.link.get()}
 {toot.description.get()}
 {/for}
 
