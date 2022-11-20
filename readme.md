@@ -1,6 +1,7 @@
 <img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
----------------
 
+Bio
+---------------
 
 👔 I work at Red Hat in Integration.
 
