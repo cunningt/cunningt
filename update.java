@@ -1,11 +1,9 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS io.quarkus.platform:quarkus-bom:2.14.1.Final@pom
-//DEPS io.quarkus:quarkus-resteasy-reactive
-//DEPS io.quarkus:quarkus-rest-client-reactive-jackson
+//DEPS io.quarkus:quarkus-bom:2.0.0.Final@pom
 //DEPS io.quarkus:quarkus-qute
 //DEPS https://github.com/w3stling/rssreader/tree/v2.5.0
 
-//JAVA 16+
+//JAVA 11+
 
 import com.apptastic.rssreader.Item;
 import com.apptastic.rssreader.RssReader;
