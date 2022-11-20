@@ -1,4 +1,3 @@
-====
 <img src="https://github.com/cunningt/cunningt/workflows/Update%20README/badge.svg">
 ====
 
