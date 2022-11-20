@@ -15,6 +15,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3.1.0
       - name: jbang
+        continue-on-error: true
         uses: jbangdev/jbang-action@v0.100.1
         with:
           jbangargs: --verbose
