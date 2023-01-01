@@ -17,6 +17,11 @@ Most recent 🦣 Mastodon posts:
 ---------------
 
 
+🦣  [2022-12-31T19:03:01Z](https://mastodon.social/@tcunning/109609836982132809)
+
+<p>2022 goal : 48 books read.    Finished 32.    Only books I gave 5* to on GoodReads : The House in the Cerulean Sea, The Great Dissent, The Four Winds.</p>
+
+
 🦣  [2022-11-20T22:19:09Z](https://mastodon.social/@tcunning/109378453470068085)
 
 <p><a href="https://mastodon.social/tags/gardening" class="mention hashtag" rel="tag">#<span>gardening</span></a> Trying to grow a <a href="https://mastodon.social/tags/joshuatree" class="mention hashtag" rel="tag">#<span>joshuatree</span></a> indoors and I&#39;m getting these small bugs - in the pic they look like little bumps on the plant.    Anyone have any ideas what they are / how to deal with them?</p>
