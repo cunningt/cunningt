@@ -5,15 +5,3 @@ Bio
 
 $bio
 
-
-Most recent 🦣 Mastodon posts:
----------------
-
-#foreach($toot in $toots)
-
-🦣  [$toot.pubDateZonedDateTime.get()]($toot.link.get())
-
-$toot.description.get()
-
-#end
-
